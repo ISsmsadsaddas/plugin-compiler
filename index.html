@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromelis | AI Plugin Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>AI Plugin Architect</h1>
+            <p>Generate raw source templates and compile production .jar files instantly.</p>
+        </header>
+
+        <div class="setup-box">
+            <label for="apiKey">Gemini API Key</label>
+            <input type="password" id="apiKey" placeholder="AIZA... (Get from Google AI Studio)">
+        </div>
+
+        <div class="prompt-box">
+            <label for="prompt">What should the plugin do?</label>
+            <textarea id="prompt" placeholder="e.g., A plugin that strikes lightning when a player breaks a block..."></textarea>
+            <button id="generateBtn">Compile Plugin (.JAR)</button>
+        </div>
+
+        <div id="status" class="status-box hidden">
+            <span class="spinner"></span>
+            <p id="statusText">Analyzing prompt inputs...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
